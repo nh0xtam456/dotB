@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ID' => 'ID:',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -70,8 +70,8 @@ $mod_strings = array (
   'db_email1' => 'LBL_LIST_EMAIL_ADDRESS',
   'db_email2' => 'LBL_LIST_OTHER_EMAIL_ADDRESS',
   'ERR_DELETE_RECORD' => 'Specify the record number to delete the contact.',
-  'LBL_ACCOUNT_ID' => 'Account ID:',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
+  'LBL_ACCOUNT_ID' => 'Customer ID:',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
   'LBL_CAMPAIGN' => 'Campaign:',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ADD_BUSINESSCARD' => 'Enter Business Card',
@@ -108,7 +108,7 @@ $mod_strings = array (
   'LBL_INVITEE' => 'Direct Reports',
   'LBL_LEAD_SOURCE' => 'Lead Source:',
   'LBL_LIST_ACCEPT_STATUS' => 'Accept Status',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_LIST_CONTACT_NAME' => 'Contact Name',
   'LBL_LIST_CONTACT_ROLE' => 'Role',
   'LBL_LIST_EMAIL_ADDRESS' => 'Email',
@@ -199,4 +199,5 @@ $mod_strings = array (
   'LBL_EXPORT_PHONE_MOBILE' => 'Mobile Phone',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
   'LBL_USER_SYNC' => 'User Sync',
+  'LBL_ACCOUNT' => 'Customer',
 );

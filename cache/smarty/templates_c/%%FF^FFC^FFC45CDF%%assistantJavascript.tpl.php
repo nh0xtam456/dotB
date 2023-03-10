@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2023-02-23 02:56:26
+<?php /* Smarty version 2.6.11, created on 2023-03-10 10:30:42
          compiled from modules/ModuleBuilder/tpls/assistantJavascript.tpl */ ?>
 <script>
 <?php echo '

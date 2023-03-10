@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:50
+// created: 2023-03-10 10:27:28
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -33,8 +33,8 @@ $mod_strings = array (
   'LBL_TYPE' => 'Type',
   'LBL_SUBJECT' => 'Subject:',
   'ERR_DELETE_RECORD' => 'You must specify a record number to delete the account.',
-  'LBL_ACCOUNT_ID' => 'Account ID',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
+  'LBL_ACCOUNT_ID' => 'Customer ID',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ATTACH_NOTE' => 'Attach Note',
@@ -58,7 +58,7 @@ $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
   'LBL_SEARCH_FORM_TITLE' => 'Case Search',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Assigned User',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_LIST_ASSIGNED' => 'Assigned To',
   'LBL_LIST_CLOSE' => 'Close',
   'LBL_LIST_FORM_TITLE' => 'Case List',
@@ -100,4 +100,5 @@ $mod_strings = array (
   'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Assigned User Name',
   'LBL_EXPORT_TEAM_COUNT' => 'Team Count',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
+  'LBL_ACCOUNT' => 'Customer',
 );

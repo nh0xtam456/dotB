@@ -50,17 +50,75 @@ if (!class_exists('VardefManager')){
 }
 VardefManager::createVardef('A_OrderDetail','A_OrderDetail', array('basic','assignable'));
 
+$dictionary["A_OrderDetail"]["fields"]["order_name"] = array(
+    'required'   => true,
+    'source'     => 'non-db',
+    'name'       => 'order_name',
+    'vname'      => 'LBL_ORDER_NAME',
+    'type'       => 'relate',
+    'rname'      => 'order_id',
+    'id_name'    => 'order_id',
+    'join_name'  => 'a_orders',
+    'link'       => 'order_orderdetail_link',
+    'table'      => 'a_orders',
+    'module'     => 'A_Orders',
+);
+
 $dictionary['A_OrderDetail']['fields']['order_id'] =
   array( 'name' => 'order_id',
-   'type' => 'varchar', 
-   'label' => 'LBL_ORDER_ID',
-	'vname' => 'LBL_ORDER_ID' );
+   'rname' => 'id',
+	'vname' => 'LBL_ORDER_NAME',
+	'type' => 'id', 
+    'table'  => 'a_orders',
+    'isnull'  => 'true',
+    'module' => 'A_Orders',
+    'dbType' => 'id',
+);
 
-$dictionary['A_OrderDetail']['fields']['product_name'] =
-   array( 'name' => 'product_name',
-	'type' => 'varchar', 
-	'label' => 'LBL_PRODUCT_NAME',
-	'vname' => 'LBL_PRODUCT_NAME' );
+$dictionary["A_OrderDetail"]["fields"]["order_orderdetail_link"] = array(
+    'name'          => 'order_orderdetail_link',
+    'type'          => 'link',
+    'relationship'  => 'order_orderdetail_link',
+    'module'        => 'A_Orders',
+    'bean_name'     => 'a_orders',
+    'source'        => 'non-db',
+    'vname'         => 'LBL_ORDER_NAME',
+);
+
+$dictionary["A_OrderDetail"]["fields"]["product_name"] = array(
+    'required'   => true,
+    'source'     => 'non-db',
+    'name'       => 'product_name',
+    'vname'      => 'LBL_PRODUCT_NAME',
+    'type'       => 'relate',
+    'rname'      => 'product_name',
+    'id_name'    => 'product_id',
+    'join_name'  => 'a_products',
+    'link'       => 'productorder_link',
+    'table'      => 'a_products',
+    'module'     => 'A_Products',
+);
+
+$dictionary['A_OrderDetail']['fields']['product_id'] =
+  array( 'name' => 'product_id',
+   'rname' => 'id',
+	'vname' => 'LBL_PRODUCT_NAME',
+	'type' => 'id', 
+    'table'  => 'a_products',
+    'isnull'  => 'true',
+    'module' => 'A_Products',
+    'dbType' => 'id',
+);
+
+$dictionary["A_OrderDetail"]["fields"]["productorder_link"] = array(
+    'name'          => 'productorder_link',
+    'type'          => 'link',
+    'relationship'  => 'product_order_link',
+    'module'        => 'A_Products',
+    'bean_name'     => 'a_products',
+    'source'        => 'non-db',
+    'vname'         => 'LBL_PRODUCT_NAME',
+);
 
 $dictionary['A_OrderDetail']['fields']['quantity'] =
 	array( 'name' => 'quantity',

@@ -46,6 +46,7 @@ array (
             'name' => 'date_entered',
             'comment' => 'Date record created',
             'label' => 'LBL_DATE_ENTERED',
+            'customCode' => '{include file="custom/modules/A_Orders/tpls/time.tpl"}',
           ),
           1 => 'assigned_user_name',
         ),
@@ -53,7 +54,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'customer',
+            'name' => 'customer_c',
+            'studio' => 'visible',
             'label' => 'LBL_CUSTOMER',
           ),
           1 => '',
@@ -67,7 +69,7 @@ array (
           array (
             'name' => 'order_id',
             'label' => 'LBL_ORDER_ID',
-            'customCode' => '{include file="custom/modules/A_Orders/tpls/customTicker.tpl"}',
+            'customCode' => '{include file="custom/modules/A_Orders/tpls/ViewEditOrder.tpl"}',
           ),
         ),
       ),

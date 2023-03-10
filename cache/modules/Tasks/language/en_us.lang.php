@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -87,4 +87,5 @@ $mod_strings = array (
   'LBL_EXPORT_PARENT_TYPE' => 'Related To Module',
   'LBL_EXPORT_PARENT_ID' => 'Related To ID',
   'LBL_RELATED_TO' => 'Related to:',
+  'LBL_ACCOUNT' => 'Customer',
 );

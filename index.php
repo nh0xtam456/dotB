@@ -1,5 +1,8 @@
 <?php
 if(!defined('sugarEntry'))define('sugarEntry', true);
+// ini_set('display_errors',1);
+// ini_set('display_startup_errors',0);
+// error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.

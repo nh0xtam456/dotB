@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:50
+// created: 2023-03-10 10:27:28
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
@@ -38,7 +38,7 @@ $mod_strings = array (
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Leads',
   'LBL_PROSPECTS_SUBPANEL_TITLE' => 'Targets',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Customers',
   'LBL_COPY_PREFIX' => 'Copy of',
   'LBL_USERS_SUBPANEL_TITLE' => 'Users',
   'LBL_TYPE' => 'Type',

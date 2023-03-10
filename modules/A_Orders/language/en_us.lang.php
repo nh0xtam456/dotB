@@ -67,5 +67,6 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'New Orders',
   'LBL_ORDER_ID' => 'Order ID',
   'LBL_TOTAL_PRICE' => 'Total Price',
-  'LBL_CUSTOMER' => 'Customer'
+  'LBL_CUSTOMER' => 'Customer',
+  'LBL_TOTAL_CUS' => 'Customer also buy'
 );

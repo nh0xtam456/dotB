@@ -51,9 +51,11 @@ if (!class_exists('VardefManager')){
 VardefManager::createVardef('A_Orders','A_Orders', array('basic','assignable'));
 $dictionary['A_Orders']['fields']['order_id'] =
  array( 'name' => 'order_id',
-  'type' => 'varchar', 
+  'type' => 'varchar',
   'label' => 'LBL_ORDER_ID',
-	'vname' => 'LBL_ORDER_ID' );
+	'vname' => 'LBL_ORDER_ID',
+	'len' => '255',
+	'default' => '' );
 
 $dictionary['A_Orders']['fields']['total_price'] =
  array( 'name' => 'total_price',
@@ -62,7 +64,23 @@ $dictionary['A_Orders']['fields']['total_price'] =
 	'vname' => 'LBL_TOTAL_PRICE');
 
 $dictionary['A_Orders']['fields']['customer'] =
-  array( 'name' => 'customer',
-   'type' => 'varchar', 
-   'label' => 'LBL_CUSTOMER' ,
-   'vname' => 'LBL_CUSTOMER');
+ array( 'name' => 'customer',
+  'type' => 'varchar', 
+  'label' => 'LBL_CUSTOMER' ,
+	'vname' => 'LBL_CUSTOMER');
+
+$dictionary['A_Orders']['fields']['total_product_of_customer'] =
+ array( 'name' => 'total_product_of_customer',
+  	'type' => 'varchar', 
+  	'label' => 'LBL_TOTAL_CUS' ,
+	'vname' => 'LBL_TOTAL_CUS');
+
+$dictionary["A_Orders"]["relationships"]["order_orderdetail_link"] = array (
+	'lhs_module' => 'A_Orders',
+	'lhs_table' => 'a_orders',
+	'lhs_key' => 'id',
+	'rhs_module' => 'A_OrderDetail',
+	'rhs_table' => 'a_orderdetail',
+	'rhs_key' => 'order_id',
+	'relationship_type' => 'one-to-many'
+);

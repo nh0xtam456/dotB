@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2023-02-23 04:21:27
+<?php /* Smarty version 2.6.11, created on 2023-03-10 10:27:35
          compiled from include/DetailView/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_button', 'include/DetailView/header.tpl', 56, false),array('function', 'counter', 'include/DetailView/header.tpl', 60, false),array('function', 'sugar_action_menu', 'include/DetailView/header.tpl', 96, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_button', 'include/DetailView/header.tpl', 60, false),array('function', 'counter', 'include/DetailView/header.tpl', 64, false),array('function', 'sugar_action_menu', 'include/DetailView/header.tpl', 100, false),)), $this); ?>
 {*
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
@@ -39,6 +39,10 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_butto
  ********************************************************************************/
 
 *}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 <?php if ($this->_tpl_vars['preForm']): ?>
 	<?php echo $this->_tpl_vars['preForm']; ?>
 

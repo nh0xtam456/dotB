@@ -59,5 +59,21 @@ array( 	'name' => 'product_id',
 		'type' => 'varchar', 
 		'label' => 'LBL_PRODUCT_ID',
 		'vname' => 'LBL_PRODUCT_ID');
+
+$dictionary['A_Products']['fields']['product_instock'] = 
+array( 	'name' => 'product_instock', 
+		'type' => 'int', 
+		'label' => 'LBL_PRODUCT_INSTOCK',
+		'vname' => 'LBL_PRODUCT_INSTOCK');
+
+$dictionary["A_Products"]["relationships"]["product_order_link"] = array (
+		'lhs_module' => 'A_Products',
+		'lhs_table' => 'a_products',
+		'lhs_key' => 'id',
+		'rhs_module' => 'A_OrderDetail',
+		'rhs_table' => 'a_orderdetail',
+		'rhs_key' => 'product_id',
+		'relationship_type' => 'one-to-many'
+	);
 VardefManager::createVardef('A_Products','A_Products', array('basic','assignable'));
 

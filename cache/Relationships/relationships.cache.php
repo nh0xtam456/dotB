@@ -7029,6 +7029,17 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
+  'order_orderdetail_link' => 
+  array (
+    'name' => 'order_orderdetail_link',
+    'lhs_module' => 'A_Orders',
+    'lhs_table' => 'a_orders',
+    'lhs_key' => 'id',
+    'rhs_module' => 'A_OrderDetail',
+    'rhs_table' => 'a_orderdetail',
+    'rhs_key' => 'order_id',
+    'relationship_type' => 'one-to-many',
+  ),
   'a_products_modified_user' => 
   array (
     'name' => 'a_products_modified_user',
@@ -7060,6 +7071,17 @@
     'rhs_module' => 'A_Products',
     'rhs_table' => 'a_products',
     'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'product_order_link' => 
+  array (
+    'name' => 'product_order_link',
+    'lhs_module' => 'A_Products',
+    'lhs_table' => 'a_products',
+    'lhs_key' => 'id',
+    'rhs_module' => 'A_OrderDetail',
+    'rhs_table' => 'a_orderdetail',
+    'rhs_key' => 'product_id',
     'relationship_type' => 'one-to-many',
   ),
   'a_suppliers_modified_user' => 

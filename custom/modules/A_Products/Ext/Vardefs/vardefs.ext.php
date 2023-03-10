@@ -9,6 +9,5 @@ $dictionary['A_Products']['fields']['price']['enable_range_search']=false;
 $dictionary['A_Products']['fields']['price']['min']=false;
 $dictionary['A_Products']['fields']['price']['max']=false;
 $dictionary['A_Products']['fields']['price']['disable_num_format']='';
-
  
 ?>

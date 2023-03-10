@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:50
+// created: 2023-03-10 10:27:28
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Project',
   'LBL_MODULE_TITLE' => 'Projects: Home',
@@ -56,7 +56,7 @@ $mod_strings = array (
   'LBL_QUICK_NEW_PROJECT' => 'New Project',
   'LBL_PROJECT_TASKS_SUBPANEL_TITLE' => 'Project Tasks',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Customers',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Opportunities',
   'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Bugs',
@@ -88,4 +88,5 @@ $mod_strings = array (
   'LBL_PROJECT_INFORMATION' => 'Overview',
   'LBL_EDITLAYOUT' => 'Edit Layout',
   'LBL_INSERTROWS' => 'Insert Rows',
+  'LBL_ACCOUNTS' => 'Customers',
 );

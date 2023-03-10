@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2023-02-22 14:14:51
+<?php /* Smarty version 2.6.11, created on 2023-03-10 14:19:01
          compiled from modules/SugarFeed/Dashlets/SugarFeedDashlet/SugarFeedScript.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getjspath', 'modules/SugarFeed/Dashlets/SugarFeedDashlet/SugarFeedScript.tpl', 123, false),)), $this); ?>

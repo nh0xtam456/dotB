@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2023-02-22 04:31:52
+<?php /* Smarty version 2.6.11, created on 2023-03-10 10:27:30
          compiled from themes/Sugar5/tpls/footer.tpl */ ?>
 <!--end body panes-->
         </td></tr></table>

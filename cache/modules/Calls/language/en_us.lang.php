@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -122,4 +122,5 @@ $mod_strings = array (
   'LBL_REPEAT_PARENT_ID' => 'Repeat Parent ID',
   'LBL_RECURRING_SOURCE' => 'Recurring Source',
   'LBL_SYNCED_RECURRING_MSG' => 'This call originated in another system and was synced to Sugar. To make changes, go to the original call within the other system. Changes made in the other system can be synced to this record.',
+  'LBL_ACCOUNT' => 'Customer',
 );

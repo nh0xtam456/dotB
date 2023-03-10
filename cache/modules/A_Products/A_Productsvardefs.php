@@ -218,6 +218,13 @@
       'label' => 'LBL_PRODUCT_ID',
       'vname' => 'LBL_PRODUCT_ID',
     ),
+    'product_instock' => 
+    array (
+      'name' => 'product_instock',
+      'type' => 'int',
+      'label' => 'LBL_PRODUCT_INSTOCK',
+      'vname' => 'LBL_PRODUCT_INSTOCK',
+    ),
   ),
   'relationships' => 
   array (
@@ -249,6 +256,16 @@
       'rhs_module' => 'A_Products',
       'rhs_table' => 'a_products',
       'rhs_key' => 'assigned_user_id',
+      'relationship_type' => 'one-to-many',
+    ),
+    'product_order_link' => 
+    array (
+      'lhs_module' => 'A_Products',
+      'lhs_table' => 'a_products',
+      'lhs_key' => 'id',
+      'rhs_module' => 'A_OrderDetail',
+      'rhs_table' => 'a_orderdetail',
+      'rhs_key' => 'product_id',
       'relationship_type' => 'one-to-many',
     ),
   ),

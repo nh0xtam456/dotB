@@ -7,12 +7,14 @@ class logicProduct{
         $row = $db->fetchOne($sqlSelect);
         if(empty($row)){
            $bean->product_id = 'SKU001';
+           $bean->product_instock = 100;
         }
         if($row['product_id']==$bean->product_id || substr($bean->product_id,0,-3)=='SKU'){
             return false;
         }
         else{
             $bean->product_id = ++$row['product_id'];   
+            $bean->product_instock = 100;
         }
     }
 }

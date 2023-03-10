@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json; charset=utf-8');
 class A_OrdersViewProduct extends SugarView
 {
     public function display()

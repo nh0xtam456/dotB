@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_FW' => 'FW:',
   'LBL_RE' => 'RE:',
@@ -20,7 +20,7 @@ $mod_strings = array (
   'ERR_NOT_ADDRESSED' => 'Error: Email must have a To, CC, or BCC address',
   'ERR_TIME_START' => 'Time Start',
   'ERR_TIME_SENT' => 'Time Sent',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Customers',
   'LBL_ADD_ANOTHER_FILE' => 'Add Another File',
   'LBL_ADD_DASHLETS' => 'Add Sugar Dashlets',
   'LBL_ADD_DOCUMENT' => 'Add Documents',
@@ -55,7 +55,7 @@ $mod_strings = array (
   'LBL_EMAIL_SELECTOR_SELECT' => 'Select',
   'LBL_EMAIL_SELECTOR_CLEAR' => 'Clear',
   'LBL_EMAIL' => 'Email Address:',
-  'LBL_EMAILS_ACCOUNTS_REL' => 'Emails:Accounts',
+  'LBL_EMAILS_ACCOUNTS_REL' => 'Emails:Customers',
   'LBL_EMAILS_BUGS_REL' => 'Emails:Bugs',
   'LBL_EMAILS_CASES_REL' => 'Emails:Cases',
   'LBL_EMAILS_CONTACTS_REL' => 'Emails:Contacts',

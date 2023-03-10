@@ -778,3 +778,309 @@
 02/25/23 09:54:22 [19784][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/25', 'bd4e6233f64dd677a5d36a65e1a4d866', '0', '0', '0', 'Please choose a product', '0'): MySQL error 1062: Duplicate entry 'bd4e6233f64dd677a5d36a65e1a4d866' for key 'PRIMARY'
 02/25/23 09:54:22 [19784][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/25', '0dca678de53c67021d3c72a335854e78', '', '', '', '', ''): MySQL error 1062: Duplicate entry '0dca678de53c67021d3c72a335854e78' for key 'PRIMARY'
 02/25/23 09:54:22 [19784][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/25', '362f93603b14f190cfa5cceeff63b2e5', '', '', '', '', ''): MySQL error 1062: Duplicate entry '362f93603b14f190cfa5cceeff63b2e5' for key 'PRIMARY'
+02/27/23 03:35:04 [6916][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/27', '0dca678de53c67021d3c72a335854e78', '', 'HD002', '', '', ''): MySQL error 1062: Duplicate entry '0dca678de53c67021d3c72a335854e78' for key 'PRIMARY'
+02/27/23 03:35:04 [6916][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/27', '362f93603b14f190cfa5cceeff63b2e5', '', 'HD002', '', '', ''): MySQL error 1062: Duplicate entry '362f93603b14f190cfa5cceeff63b2e5' for key 'PRIMARY'
+02/27/23 03:39:22 [6916][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/27', '0dca678de53c67021d3c72a335854e78', '10000', '', '2', 'cơm sườn', '0'): MySQL error 1062: Duplicate entry '0dca678de53c67021d3c72a335854e78' for key 'PRIMARY'
+02/27/23 03:50:20 [6916][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/27', '0dca678de53c67021d3c72a335854e78', '10000', 'HD002', '2', 'cơm sườn', '0'): MySQL error 1062: Duplicate entry '0dca678de53c67021d3c72a335854e78' for key 'PRIMARY'
+02/27/23 03:50:20 [6916][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('2023/02/27', '362f93603b14f190cfa5cceeff63b2e5', '2000', 'HD002', '1', 'cơm sườn không sườn', '0'): MySQL error 1062: Duplicate entry '362f93603b14f190cfa5cceeff63b2e5' for key 'PRIMARY'
+02/28/23 05:17:59 [11644][1][FATAL]  Query Failed: SELECT * FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
+02/28/23 05:18:10 [11644][1][FATAL]  Query Failed: SELECT * FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
+02/28/23 05:19:04 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+02/28/23 05:19:11 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+02/28/23 05:20:50 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:21:01 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:21:16 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:21:22 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id 
+                 AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:22:25 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name                FROM a_orderdetail as od, a_order as o                  WHERE o.order_id = od.order_id AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:22:31 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:22:36 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:22:46 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:22:53 [11644][1][FATAL]  Query Failed: SELECT o.id as id, od.product_name as name
+                FROM a_orderdetail as od, a_order as o 
+                 WHERE o.order_id = od.order_id AND o.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:24:22 [11644][1][FATAL]  Query Failed: SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:24:57 [11644][1][FATAL]  Query Failed: SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id=279a5b8198e2a49f442fbfee39ccbbf8: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:25:51 [11644][1][FATAL]  Query Failed: SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id=279a5b8198e2a49f442fbfee39ccbbf8 LIMIT 0,1: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:25:51 [11644][1][FATAL]  Fetch One Failed:SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id=279a5b8198e2a49f442fbfee39ccbbf8 LIMIT 0,1: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:26:07 [11644][1][FATAL]  Query Failed: SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id='279a5b8198e2a49f442fbfee39ccbbf8' LIMIT 0,1: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 05:26:07 [11644][1][FATAL]  Fetch One Failed:SELECT a_order.id as id, a_orderdetail.product_name as name
+                FROM a_orderdetail, a_order
+                 WHERE a_order.order_id = a_orderdetail.order_id AND a_order.id='279a5b8198e2a49f442fbfee39ccbbf8' LIMIT 0,1: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+02/28/23 06:34:44 [11644][1][FATAL]  Query Failed: SELECT a_orders.id as id, a_orderdetail.product_name as name, a_ordersdetail.order_id as order_id
+                    FROM a_orderdetail, a_orders
+                    WHERE a_orders.order_id = a_orderdetail.order_id AND a_orders.id='279a5b8198e2a49f442fbfee39ccbbf8'
+                    : MySQL error 1054: Unknown column 'a_ordersdetail.order_id' in 'field list'
+02/28/23 11:43:28 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES (uuid('d5d7f18160f4d801e1644903d60f71e6'),'HD003','24000'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:43:28 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', uuid('e75c21d16a1924f8aa14b498d6ae4e93'), '10000', 'HD003', '2', 'cơm sườn', '0'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:43:28 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU002', '2023/02/28', uuid('1d1ee610c1b6bc4e6a77bc2490e62894'), '2000', 'HD003', '1', 'cơm sườn không sườn', '0'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:45:21 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES (uuid('d5d7f18160f4d801e1644903d60f71e6'),'HD003','24000'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:46:24 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', uuid('HD003'), '10000', 'HD003', '2', 'cơm sườn', '0'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:46:24 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU002', '2023/02/28', uuid('HD003'), '2000', 'HD003', '1', 'cơm sườn không sườn', '0'): MySQL error 1582: Incorrect parameter count in the call to native function 'uuid'
+02/28/23 11:46:32 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES random_uuid(),'HD003','24000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'random_uuid(),'HD003','24000')' at line 1
+02/28/23 11:46:57 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES random_uuid(),'HD003','24000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'random_uuid(),'HD003','24000')' at line 1
+02/28/23 11:46:57 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '10000', 'HD003', '2', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:46:57 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU002', '2023/02/28', random_uuid(), '2000', 'HD003', '1', 'cơm sườn không sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:51:51 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id` UUID,`order_id`,`total_price`) VALUES UUID(),'HD004','18000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UUID,`order_id`,`total_price`) VALUES UUID(),'HD004','18000')' at line 1
+02/28/23 11:51:51 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU002', '2023/02/28', random_uuid(), '4000', 'HD004', '2', 'cơm sườn không sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:51:51 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '5000', 'HD004', '1', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:58:15 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES uuid(),'HD004','24000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'uuid(),'HD004','24000')' at line 1
+02/28/23 11:58:15 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '10000', 'HD004', '2', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:58:15 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU002', '2023/02/28', random_uuid(), '2000', 'HD004', '1', 'cơm sườn không sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:59:01 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES random_uuid(),'HD001','5000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'random_uuid(),'HD001','5000')' at line 1
+02/28/23 11:59:01 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '5000', 'HD001', '1', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 11:59:48 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES random_uuid(),'HD001','5000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'random_uuid(),'HD001','5000')' at line 1
+02/28/23 11:59:48 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '5000', 'HD001', '1', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 12:00:18 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES UUID(),'HD001','5000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UUID(),'HD001','5000')' at line 1
+02/28/23 12:00:18 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '5000', 'HD001', '1', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+02/28/23 12:01:59 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orders` (`id`,`order_id`,`total_price`) VALUES uuid(),'HD001','5000'): MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'uuid(),'HD001','5000')' at line 1
+02/28/23 12:01:59 [14016][1][FATAL]  Query Failed: INSERT INTO `a_orderdetail` (`product_id`, `date_entered`, `id`, `price`, `order_id`, `quantity`, `product_name`, `discount`) VALUES ('SKU001', '2023/02/28', random_uuid(), '5000', 'HD001', '1', 'cơm sườn', '0'): MySQL error 1305: FUNCTION sugarcrm.random_uuid does not exist
+03/01/23 05:42:36 [19284][1][FATAL] Executing repair query:  Query Failed: ALTER TABLE a_orders   add COLUMN account_id char(36)  NULL: MySQL error 1060: Duplicate column name 'account_id'
+03/02/23 05:29:59 [13116][1][FATAL]  Query Failed: SELECT FROM a_orderdetail WHERE order_id = 'HD002' : MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM a_orderdetail WHERE order_id = 'HD002'' at line 1
+03/02/23 08:40:40 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:40:48 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:03 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:30 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:32 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:36 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:40 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:41:50 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id : MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:43:17 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_order as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id AND od.order_id = o.order_id: MySQL error 1146: Table 'sugarcrm.a_order' doesn't exist
+03/02/23 08:44:05 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_orders as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id AND od.order_id = o.order_id: MySQL error 1054: Unknown column 'o.total_price' in 'field list'
+03/02/23 08:44:07 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_orders as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id AND od.order_id = o.order_id: MySQL error 1054: Unknown column 'o.total_price' in 'field list'
+03/02/23 08:44:21 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_orders as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id: MySQL error 1054: Unknown column 'o.total_price' in 'field list'
+03/02/23 08:44:23 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, o.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_orders as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id: MySQL error 1054: Unknown column 'o.total_price' in 'field list'
+03/02/23 08:45:12 [13116][1][FATAL]  Query Failed:  SELECT *, p.price as unit_price, o.price as total_price, od.total_price as product_total_price
+                      FROM a_orderdetail as o, a_products as p, a_orders as od
+                      WHERE o.order_id = 'HD001' AND o.product_id = p.product_id
+                      AND od.product_id = o.product_id: MySQL error 1054: Unknown column 'od.product_id' in 'where clause'
+03/02/23 10:50:28 [13116][1][FATAL]  Query Failed: SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:50:28 [13116][1][FATAL]  Fetch One Failed:SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:50:28 [13116][1][FATAL]  Query Failed: SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:50:28 [13116][1][FATAL]  Fetch One Failed:SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:50:46 [13116][1][FATAL]  Query Failed: SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:50:46 [13116][1][FATAL]  Fetch One Failed:SELECT id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1052: Column 'id' in field list is ambiguous
+03/02/23 10:52:07 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:52:07 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:52:07 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:52:07 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:52:22 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:52:22 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:00 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:00 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:00 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:00 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:23 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:53:23 [13116][1][FATAL]  Fetch One Failed:SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 LIMIT 0,1: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:55:49 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:56:02 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o 
+                                        WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:56:34 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 10:58:56 [13116][1][FATAL]  Query Failed: SELECT od.id FROM a_orderdetail as od, a_orders as o WHERE o.order_id = od.order_id AND o.id = b3210538-cc70-a8c2-8b31-640070b66ef4 ORDER BY od.id DESC: MySQL error 1054: Unknown column 'b3210538' in 'where clause'
+03/02/23 11:42:47 [12212][1][FATAL]  Query Failed:   SELECT 
+                                            FROM a_orders as o, a_orderdetail as od
+                                            WHERE o.order_id = od.order_id AND o.id = 'b3210538-cc70-a8c2-8b31-640070b66ef4' AND  : MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM a_orders as o, a_orderdetail as od
+                                       ' at line 2
+03/02/23 11:43:11 [12212][1][FATAL]  Query Failed:   SELECT 
+                                            FROM a_orders as o, a_orderdetail as od
+                                            WHERE o.order_id = od.order_id AND o.id = 'b3210538-cc70-a8c2-8b31-640070b66ef4' AND  : MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM a_orders as o, a_orderdetail as od
+                                       ' at line 2
+03/02/23 11:43:45 [12212][1][FATAL]  Query Failed:   SELECT 
+                                            FROM a_orders as o, a_orderdetail as od
+                                            WHERE o.order_id = od.order_id AND o.id = 'b3210538-cc70-a8c2-8b31-640070b66ef4': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM a_orders as o, a_orderdetail as od
+                                       ' at line 2
+03/02/23 11:51:52 [12212][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='Cty Update',date_modified='2023-03-02 10:51:52',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD002',product_name='cơm sườn không sườn',quantity=2,price=4000,discount='0',product_id='SKU002',total_price=NULL
+					 WHERE  a_orderdetail.id = 'b42067b1-c181-7aa4-9875-640070d3f308' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 11:54:47 [12212][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='',date_modified='2023-03-02 10:54:47',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD002',product_name='cơm sườn không sườn',quantity=2,price=4000,discount='0',product_id='SKU002',total_price=NULL
+					 WHERE  a_orderdetail.id = 'b42067b1-c181-7aa4-9875-640070d3f308' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 11:55:10 [12212][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='',date_modified='2023-03-02 10:55:10',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD003',product_name='cơm sườn',quantity=3,price=15000,discount='0',product_id='SKU001',total_price=NULL
+					 WHERE  a_orderdetail.id = '4b290e77-fe9b-1e30-e62f-640080e683ab' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 11:55:55 [12212][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='',date_modified='2023-03-02 10:55:24',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD003',product_name='cơm sườn',quantity=3,price=15000,discount='0',product_id='SKU001',total_price=NULL
+					 WHERE  a_orderdetail.id = '4b290e77-fe9b-1e30-e62f-640080e683ab' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 12:05:34 [12212][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='',date_modified='2023-03-02 11:05:34',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD004',product_name='cơm sườn không sườn',quantity=2,price=4000,discount='0',product_id='SKU002',total_price=NULL
+					 WHERE  a_orderdetail.id = 'bba4fb32-84cc-5c71-39ae-6400826703fd' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 13:31:14 [13220][1][FATAL] Error updating table: a_orderdetail: Query Failed: UPDATE a_orderdetail
+					SET name='',date_modified='2023-03-02 12:31:14',modified_user_id='1',created_by='1',description=NULL,assigned_user_id='',order_id='HD001',product_name='cơm sườn',quantity=3,price=15000,discount='0',product_id='SKU001',total_price=NULL
+					 WHERE  a_orderdetail.id = '77d08307-868f-612e-625d-64009649c57c' AND deleted=0: MySQL error 1054: Unknown column 'total_price' in 'field list'
+03/02/23 14:12:40 [18268][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+03/02/23 14:17:34 [18268][1][FATAL] IP Address mismatch: SESSION IP: 127.0.0.1 CLIENT IP: ::1
+03/02/23 14:21:25 [15996][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+03/02/23 14:21:25 [15996][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+03/02/23 14:21:42 [15996][1][FATAL] IP Address mismatch: SESSION IP: 127.0.0.1 CLIENT IP: ::1
+03/02/23 14:21:54 [15996][-none-][FATAL] SECURITY: User authentication for admin failed
+03/02/23 14:21:54 [15996][-none-][FATAL] FAILED LOGIN:attempts[1] - admin
+03/03/23 06:56:05 [3472][1][FATAL]  Query Failed: DELETE * FROM A_OrderDetail WHERE id= 'HD002': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_OrderDetail WHERE id= 'HD002'' at line 1
+03/03/23 06:56:14 [3472][1][FATAL]  Query Failed: DELETE * FROM A_OrderDetail WHERE id= 'HD002': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_OrderDetail WHERE id= 'HD002'' at line 1
+03/03/23 07:04:48 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD003: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD003' at line 1
+03/03/23 07:04:57 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD003: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD003' at line 1
+03/03/23 07:04:57 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD003: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD003' at line 1
+03/03/23 07:06:39 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD001: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD001' at line 1
+03/03/23 07:07:54 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD001: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD001' at line 1
+03/03/23 07:07:54 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD001: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD001' at line 1
+03/03/23 07:08:38 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = HD001: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = HD001' at line 1
+03/03/23 07:08:58 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = 'HD001'' at line 1
+03/03/23 07:08:58 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = 'HD001'' at line 1
+03/03/23 07:08:58 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = 'HD001'' at line 1
+03/03/23 07:08:58 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = 'HD001'' at line 1
+03/03/23 07:09:33 [11028][1][FATAL]  Query Failed: DELETE * FROM A_Orders WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_Orders WHERE order_id = 'HD001'' at line 1
+03/03/23 07:09:53 [11028][1][FATAL]  Query Failed: DELETE * FROM A_OrderDetail WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM A_OrderDetail WHERE order_id = 'HD001'' at line 1
+03/03/23 07:10:43 [11028][1][FATAL]  Query Failed: DELETE * FROM a_orderdetail WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM a_orderdetail WHERE order_id = 'HD001'' at line 1
+03/03/23 08:06:40 [11028][1][FATAL] kbdocuments for case_kbdocuments failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] quotes for projects_quotes failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] holidays for users_holidays failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] project_resource for projects_users_resources failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] project_resource for projects_contacts_resources failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] holidays for users_holidays failed to load
+
+03/03/23 08:06:40 [11028][1][FATAL] project_resource for projects_users_resources failed to load
+
+03/03/23 08:06:41 [11028][1][FATAL] assigned_user_link for tracker_user_id failed to load
+
+03/03/23 08:06:41 [11028][1][FATAL] Class Connectors does not exist, unable to rename.
+03/03/23 08:06:41 [11028][1][FATAL] Class CustomFields does not exist, unable to rename.
+03/03/23 08:06:41 [11028][1][FATAL] Class Audit does not exist, unable to rename.
+03/03/23 08:06:41 [11028][1][FATAL] holidays for users_holidays failed to load
+
+03/03/23 08:06:41 [11028][1][FATAL] project_resource for projects_users_resources failed to load
+
+03/04/23 04:46:27 [22684][1][FATAL] Error inserting into table: a_products: Query Failed: INSERT INTO a_products (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,price,product_id,instock)
+					VALUES ('4b621c48-dc61-981f-649c-6402bf0fb945','bún chả','2023-03-04 03:46:27','2023-03-04 03:46:27','1','1','',0,'5000','SKU002',100): MySQL error 1054: Unknown column 'instock' in 'field list'
+03/04/23 04:48:57 [22684][1][FATAL] Error inserting into table: a_products: Query Failed: INSERT INTO a_products (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,price,product_id,instock)
+					VALUES ('5aa69631-fcc1-370b-11a8-6402bf4345ba','bún cha','2023-03-04 03:48:57','2023-03-04 03:48:57','1','1','',0,'5000','SKU001',100): MySQL error 1054: Unknown column 'instock' in 'field list'
+03/04/23 04:49:11 [22684][1][FATAL] Error inserting into table: a_products: Query Failed: INSERT INTO a_products (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,price,product_id,instock)
+					VALUES ('30e70dcc-ce77-7a9d-c325-6402bfa5763a','bún cha','2023-03-04 03:49:10','2023-03-04 03:49:10','1','1','',0,'5000','SKU001',100): MySQL error 1054: Unknown column 'instock' in 'field list'
+03/04/23 05:28:44 [22684][1][FATAL] Error: Module A_Order does not exist.
+03/06/23 04:38:06 [16948][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+03/06/23 04:38:06 [16948][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+03/08/23 06:01:08 [20256][1][FATAL]  Query Failed: DELETE * FROM a_orderdetail WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM a_orderdetail WHERE order_id = 'HD001'' at line 1
+03/08/23 06:02:02 [20256][1][FATAL]  Query Failed: DELETE * FROM a_orderdetail WHERE order_id = 'HD001': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM a_orderdetail WHERE order_id = 'HD001'' at line 1
+03/10/23 03:59:31 [16712][1][FATAL] Executing repair query:  Query Failed: ALTER TABLE a_orders   add COLUMN total_product_of_customer non-db  NULL: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'non-db  NULL' at line 1
+03/10/23 04:04:02 [16712][1][FATAL] Executing repair query:  Query Failed: ALTER TABLE a_orders   add COLUMN total_product_of_customer non-db  NULL: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'non-db  NULL' at line 1
+03/10/23 04:34:57 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='Hào' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:35:25 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='Hào' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:37:16 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:38:26 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:38:35 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:39:21 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:40:36 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:41:38 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:43:46 [16712][1][FATAL]  Query Failed: INSERT INTO a_orders(customers) VALUES 'Nhân': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Nhân'' at line 1
+03/10/23 04:43:49 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:44:28 [16712][1][FATAL]  Query Failed: INSERT INTO a_orders(`customer`) VALUES 'Nhân': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Nhân'' at line 1
+03/10/23 04:44:29 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:44:53 [16712][1][FATAL]  Query Failed: INSERT INTO a_orders(`customer`) VALUES 'Nhân': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Nhân'' at line 1
+03/10/23 04:45:20 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:45:54 [16712][1][FATAL]  Query Failed: INSERT INTO a_orders(`customer`) VALUES 'Nhân': MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Nhân'' at line 1
+03/10/23 04:45:58 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:48:52 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:50:16 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:50:34 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:51:29 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:52:45 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:53:13 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='Nhân' : MySQL error 1054: Unknown column 'customers' in 'where clause'
+03/10/23 04:54:05 [16712][1][FATAL]  Query Failed: SELECT order_id FROM a_orders WHERE customers='Nhân' : MySQL error 1054: Unknown column 'customers' in 'where clause'

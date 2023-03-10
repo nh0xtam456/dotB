@@ -286,7 +286,8 @@
       'len' => '100',
       'comment' => 'The city used for billing address',
       'group' => 'billing_address',
-      'merge_filter' => 'enabled',
+      'merge_filter' => 'disabled',
+      'comments' => 'The city used for billing address',
     ),
     'billing_address_state' => 
     array (
@@ -315,7 +316,8 @@
       'type' => 'varchar',
       'group' => 'billing_address',
       'comment' => 'The country used for the billing address',
-      'merge_filter' => 'enabled',
+      'merge_filter' => 'disabled',
+      'comments' => 'The country used for the billing address',
     ),
     'rating' => 
     array (

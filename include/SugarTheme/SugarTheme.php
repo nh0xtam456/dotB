@@ -386,7 +386,7 @@ class SugarTheme
 				);
 			}
         }
-    }
+        }
 
     /**
      * Specifies what is returned when the object is cast to a string, in this case it will be the

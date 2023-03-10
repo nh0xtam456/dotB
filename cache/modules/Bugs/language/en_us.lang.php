@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:50
+// created: 2023-03-10 10:27:28
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -76,7 +76,7 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'History',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Contacts',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Customers',
   'LBL_CASES_SUBPANEL_TITLE' => 'Cases',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projects',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Documents',
@@ -89,4 +89,5 @@ $mod_strings = array (
   'LBL_EXPORT_FIXED_IN_RELEASE_NAMR' => 'Fixed in Release Name',
   'LBL_EXPORT_MODIFIED_USER_ID' => 'Modified By ID',
   'LBL_EXPORT_CREATED_BY' => 'Created By ID',
+  'LBL_ACCOUNTS' => 'Customers',
 );

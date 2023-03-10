@@ -1,10 +1,10 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
   'ERR_DELETE_RECORD' => 'You must specify a record number to delete the account.',
-  'LBL_ACCOUNT_ID' => 'Account ID:',
+  'LBL_ACCOUNT_ID' => 'Customer ID:',
   'LBL_CASE_ID' => 'Case ID:',
   'LBL_CLOSE' => 'Close:',
   'LBL_COLON' => ':',
@@ -68,4 +68,5 @@ $mod_strings = array (
   'LBL_DATE_ENTERED' => 'Date Created',
   'LBL_DATE_MODIFIED' => 'Date Modified',
   'LBL_DELETED' => 'Deleted',
+  'LBL_ACCOUNTS' => 'Customers',
 );

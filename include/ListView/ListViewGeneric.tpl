@@ -1,4 +1,4 @@
-{*
+head{*
 
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by

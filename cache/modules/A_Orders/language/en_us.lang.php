@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -34,5 +34,10 @@ $mod_strings = array (
   'LBL_ORDER_ID' => 'Order ID',
   'LBL_TOTAL_PRICE' => 'Total Price',
   'LBL_CUSTOMER' => 'Customer',
-  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_TOTAL_CUS' => 'Customer also buy',
+  'LBL_EDITVIEW_PANEL1' => 'Oder&#039;s Detail',
+  'LBL_DETAILVIEW_PANEL1' => 'Order&#039;s Detail',
+  'LBL_ACCOUNTS_A_ORDERS_1_FROM_ACCOUNTS_TITLE' => 'Customers',
+  'LBL_CUSTOMER_ACCOUNT_ID' => 'Customer (related Customer ID)',
+  'LBL_DETAILVIEW_PANEL2' => 'New Panel 2',
 );

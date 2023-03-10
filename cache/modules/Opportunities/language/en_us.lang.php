@@ -1,5 +1,5 @@
 <?php
-// created: 2023-02-22 04:31:51
+// created: 2023-03-10 10:27:29
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -29,12 +29,12 @@ $mod_strings = array (
   'LBL_INVITEE' => 'Contacts',
   'LBL_CURRENCIES' => 'Currencies',
   'LBL_LIST_OPPORTUNITY_NAME' => 'Name',
-  'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
+  'LBL_LIST_ACCOUNT_NAME' => 'Customer Name',
   'LBL_LIST_AMOUNT' => 'Opportunity Amount',
   'LBL_LIST_AMOUNT_USDOLLAR' => 'Amount',
   'LBL_LIST_DATE_CLOSED' => 'Close',
   'LBL_LIST_SALES_STAGE' => 'Sales Stage',
-  'LBL_ACCOUNT_ID' => 'Account ID',
+  'LBL_ACCOUNT_ID' => 'Customer ID',
   'LBL_CURRENCY_ID' => 'Currency ID',
   'LBL_CURRENCY_NAME' => 'Currency Name',
   'LBL_CURRENCY_SYMBOL' => 'Currency Symbol',
@@ -67,7 +67,7 @@ $mod_strings = array (
   'UPDATE_NULL_VALUE' => 'Amount is NULL setting it to 0 -',
   'UPDATE_MERGE' => 'Merge Currencies',
   'UPDATE_MERGE_TXT' => 'Merge multiple currencies into a single currency. If there are multiple currency records for the same currency, you merge them together. This will also merge the currencies for all other modules.',
-  'LBL_ACCOUNT_NAME' => 'Account Name:',
+  'LBL_ACCOUNT_NAME' => 'Customer Name:',
   'LBL_AMOUNT' => 'Opportunity Amount:',
   'LBL_AMOUNT_USDOLLAR' => 'Amount:',
   'LBL_CURRENCY' => 'Currency:',
@@ -112,4 +112,5 @@ $mod_strings = array (
   'LBL_EXPORT_CREATED_BY' => 'Created By ID',
   'LBL_EXPORT_NAME' => 'Name',
   'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
+  'LBL_ACCOUNTS' => 'Customers',
 );
